@@ -23,7 +23,7 @@ export default function Cart() {
   return (
     <div>
       <BackHeader title={`My Cart (${cart.items.length})`} />
-      <div className="page">
+      <div className="page" style={{ paddingBottom: 150 }}>
         <div className="card">
           {cart.items.map((it) => (
             <div key={it._id} className="cart-item">
@@ -77,7 +77,7 @@ export default function Cart() {
         </div>
       </div>
 
-      <div className="sticky-checkout">
+      <div className="sticky-checkout above-nav">
         <div>
           <div style={{ fontSize: 12, color: 'var(--muted)' }}>Total</div>
           <div style={{ fontWeight: 800, fontSize: 18 }}>{inr(cart.total)}</div>

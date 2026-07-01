@@ -167,6 +167,8 @@ input, textarea, select { font-family: inherit; }
   position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); width: 100%; max-width: var(--maxw);
   background: #fff; border-top: 1px solid var(--border); padding: 12px 14px; z-index: 25; display: flex; gap: 12px; align-items: center;
 }
+/* When a bottom nav is also present (e.g. Cart), lift the checkout bar above it */
+.sticky-checkout.above-nav { bottom: 62px; z-index: 31; box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.06); }
 
 /* Chips / filters */
 .chips { display: flex; gap: 8px; overflow-x: auto; padding: 6px 0; }
